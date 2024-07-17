@@ -1,4 +1,4 @@
-# Scrabble Scorer
+ # Scrabble Scorer
 
 ## Assignment Requirements
 

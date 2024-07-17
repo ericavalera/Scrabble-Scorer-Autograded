@@ -38,7 +38,7 @@ function initialPrompt() {
 };
 
 let newPointStructure= transform(oldPointStructure);
-newPointStructure[0]= " ";
+newPointStructure[0]= " "; // bonus section
 
 let simpleScorer =  function (word){
    let score= word.length;
@@ -101,7 +101,7 @@ function scorerPrompt(word) {
       return `Score for '${word}' : ${scoringAlgorithms[numSelection].scorerFunction(word)}`;
    } else {
      console.log(`INVALID ENTRY!! Number selection should be 0, 1, or 2, please try again. \n`) ;
-     return scorerPrompt(word);
+     return scorerPrompt(word); //bonus
    }
 };
 
@@ -120,8 +120,7 @@ function scorerPrompt(word) {
 
 function runProgram() {
    let prompt = initialPrompt();
-    console.log (scorerPrompt(prompt));
-   
+    return console.log (scorerPrompt(prompt)); // returns word & score from the scorer prompt 
 };
 
 // Don't write any code below this line //
